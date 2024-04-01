@@ -1,0 +1,127 @@
+* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 10 px;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.3;
+  font-family: Athena;
+  background: #121212;
+  color: white;
+}
+
+.wrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  font-size: 5rem;
+  position: fixed;
+  z-index: 10;
+  top: 15%;
+  left: 4rem;
+  line-height: 0.9;
+}
+
+.line {
+  background-color: #8e0477;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.stuff::before {
+  content: "";
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.block {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.profile::before,
+.profile .block {
+  background-color: #8e0477;
+}
+
+.itenas::before,
+.itenas .block {
+  background-color: #e3df00;
+}
+
+.caption {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  width: 30%;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: monospace;
+  transform: translate(100%, 100%);
+}
+
+.stuff img {
+  position: relative;
+  z-index: 10;
+  height: 90vh;
+  width: auto;
+  transform: translateY(-100%);
+}
+
+.huge-text {
+  font-size: 25rem;
+  width: 100%;
+  text-align: center;
+  color: #60d2f8;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translateY(100%);
+  font-weight: 700;
+}
